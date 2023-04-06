@@ -38,7 +38,7 @@ const CompanySearchResults = () => {
       <Row>
         <Col xs={10} className="mx-auto my-3">
           <div className="d-flex justify-content-between align-items-center">
-            {jobs[0].company_name && <h1>{jobs[0].company_name} jobs</h1>}
+            {jobs[0]?.company_name && <h1>{jobs[0].company_name} jobs</h1>}
             <Button
               variant="outline-dark"
               onClick={() => navigate("/favourites")}
